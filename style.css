@@ -229,8 +229,83 @@ table {
 .words__card-item {
 }
 .words__card-image {
+
 }
 .words__card-image--title {
 }
 .words__card-image--subtitle {
+}
+
+ /*  ======= T E A M  =======  */
+
+.team {
+     height: 782px;
+     background-color: antiquewhite;
+}
+.team__inner {
+}
+.team__inner-card {
+}
+.team__inner-card--image {
+}
+.team__inner-card--title {
+}
+.team__inner-card--profession {
+}
+.team__inner-card--describe {
+}
+.team__inner-social--link {
+}
+.social--link---item {
+}
+
+  /*  ======= C L I E N T S  =======  */
+
+.clients {
+}
+.clients__inner {
+}
+.clients__inner-content {
+}
+.clients__inner-content--picture {
+}
+.clients__inner-content--describe {
+}
+.clients__inner-content--describe---quote {
+}
+.clients__inner-content--describe---autor {
+}
+.clients__inner-describe--slider {
+}
+.clients__inner-describe--slider---circle {
+}
+
+   /*  ======= D O W N L O A D  =======  */
+
+.download {
+    height: 340px;
+    background-color: chartreuse;
+}
+.download__inner {
+}
+.download__title {
+}
+.download__subtitle {
+}
+.download__find-button {
+}
+.find-button--title {
+}
+
+    /*  ======= F O O T E R  =======  */
+
+.footer {
+    height: 344px;
+    background-color: #31344e;
+}
+.footer__inner {
+}
+.footer__social-content {
+}
+.footer__signature {
 }
