@@ -24,25 +24,39 @@
                 <div class="header__logo">
                     <img src="./assets/img/ActiveBoxLogo.png" alt="logo">
                 </div>
-                <nav class="navigation">
-                    <a href="#" class="navigation__link">Features</a>
-                    <a href="#" class="navigation__link">Works</a>
-                    <a href="#" class="navigation__link">Our Team</a>
-                    <a href="#" class="navigation__link">Testimonials</a>
-                    <a href="#" class="navigation__link">Download</a>
-                </nav>
+                <div class="navigation">
+                    <div class="navigation__block"><a href="#features" class="navigation__link">Features</a></div>
+                    <div class="navigation__block"><a href="#works" class="navigation__link">Works</a></div>
+                    <div class="navigation__block"><a href="#team" class="navigation__link">Our Team</a></div>
+                    <div class="navigation__block"><a href="#clients" class="navigation__link">Testimonials</a></div>
+                    <div class="navigation__block"><a href="#download" class="navigation__link">Download</a></div>
+                    <!-- <a href="#features" class="navigation__link">Features</a>
+                    <a href="#works" class="navigation__link">Works</a>
+                    <a href="#team" class="navigation__link">Our Team</a>
+                    <a href="#clients" class="navigation__link">Testimonials</a>
+                    <a href="#download" class="navigation__link">Download</a> -->
+                </div>
 
-                <button class="burger" id="burger" type="button">
-                    <span class="burger__item" id="menu">Menu</span>
-                    <!-- <nav class="navigation" id="navigation">
+                <button class="burger__navigation" id="burger__navigation" type="button">
+                    <span class="burger__item" id="burger__item">Menu</span>
+                </button>
+
+
+                <!-- <div class="burger__navigation" id="burger__navigation">
+                    <ul class="burger__nav" id="burger__nav">
+                        <li> <a href="#" class="navigation__link">Features</a></li>
+                        <li> <a href="#" class="navigation__link">Features</a></li>
+                        <li> <a href="#" class="navigation__link">Features</a></li>
+                        <li> <a href="#" class="navigation__link">Features</a></li>
                         <a href="#" class="navigation__link">Features</a>
                         <a href="#" class="navigation__link">Works</a>
                         <a href="#" class="navigation__link">Our Team</a>
                         <a href="#" class="navigation__link">Testimonials</a>
                         <a href="#" class="navigation__link">Download</a>
-                    </nav> -->
-                </button>
-                
+                    </ul>
+                </div> -->
+
+
             </div>
         </div>
     </header>
@@ -61,7 +75,7 @@
     </div>
 
     <main class="main">
-        <div class="features">
+        <div class="features" id="features">
             <div class="container">
                 <div class="features__inner">
                     <div class="features__card">
@@ -123,7 +137,7 @@
         </div>
 
         <!--    works       -->
-        <div class="works">
+        <div class="works" id="works">
             <div class="works__inner">
 
                 <div class="works__card">
@@ -212,7 +226,7 @@
 
 
         <!-- team  -->
-        <div class="team">
+        <div class="team" id="team">
             <div class="container">
                 <div class="team__inner">
 
@@ -325,7 +339,7 @@
         </div> <!-- /. team  -->
 
         <!--  clients -->
-        <div class="clients">
+        <div class="clients" id="clients">
             <div class="container">
 
                 <div class="clients__inner">
@@ -355,7 +369,7 @@
         </div><!-- /.clients -->
 
         <!--  download -->
-        <div class="download">
+        <div class="download" id="download">
             <div class="container">
 
                 <div class="download__inner">

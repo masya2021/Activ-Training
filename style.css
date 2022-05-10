@@ -24,12 +24,14 @@ footer, header, hgroup, menu, nav, section {
 }
 html {
 	height: 100%;
+    scroll-behavior: smooth;
 }
 body {
 	line-height: 1;
     color: #fff;
     font-family: "Raleway", sans-serif;
     font-size: 13px;
+    /* scroll-behavior: smooth; */
 }
 *,
 *:before,
@@ -87,8 +89,11 @@ table {
     font-weight: 700;
     text-transform: uppercase;
 }
-.navigation__link {
+.navigation__block{
+    display: flex;
     margin-left: 50px;
+}
+.navigation__link {
     color: #fff;
     text-decoration: none ;
     opacity: 0.75;
@@ -604,14 +609,14 @@ table {
 /*     B U R G E R  
 ==================== */
 
-.burger{
+.burger__navigation{
     display: none;
     background: none;
 
     border: 0;
     cursor: pointer;
-    
 }
+
 .burger__item{
     display: block;
     width: 35px;
@@ -621,9 +626,9 @@ table {
 
     font-size: 0;
     color: transparent;
-
     position: relative;
 }
+
 .burger__item::before{
     content: "";
     width: 100%;
@@ -631,12 +636,11 @@ table {
     background-color: #fff;
     opacity: 0.8;
 
-
     position: absolute;
     left: 0;
     top: -10px;
     z-index: 1;
-}
+}  
 .burger__item::after{
     content: "";
     width: 100%;
@@ -644,12 +648,12 @@ table {
     background-color: #fff;
     opacity: 0.8;
 
-
     position: absolute;
     left: 0;
     top: 10px;
     z-index: 1;
 }
+  
 
 /*     M E D I A 
 ==================== */
@@ -686,13 +690,39 @@ table {
         margin-bottom: 40px;
     }
 
+
+    /*     B U R G E R - M E N U  
+==================== */
     .navigation{
         display: none;
     }
 
-    .burger{
+    .burger__navigation{
         display: block;
     }
+
+    .show {
+        display: inline-block;
+        position: absolute;
+
+        height: 125px;
+        left: 0.5%;
+        margin-top: 220px;
+        padding: 5px;
+        background-color: rgb(188, 224, 248);
+        opacity: 0.9;
+        width: 99%;
+    }
+    .navigation__block{
+        padding: 5px 0;
+    }
+    .navigation__link{
+        color: red;
+    }
+   
+
+    /*     T E A M  
+==================== */
 
     .team__inner{
     /* flex-direction: column; */
@@ -713,6 +743,8 @@ table {
         justify-content: center;
     }
 
+    /*     C L I E N T S  
+==================== */
     .clients__inner-picture {
         width: 100%;
         margin: 15px 0;
@@ -739,6 +771,9 @@ table {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
+    /*     F O O T E R  
+==================== */
 
     .footer__inner{
         padding:  60px 0 40px;
