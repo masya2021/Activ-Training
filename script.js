@@ -5,6 +5,7 @@ burgerMenu.onclick = function () {
 };
 
 function addMenu() {
-  console.log("click");
   document.querySelector(".navigation").classList.toggle("show");
+
+  // burgerMenu.remove("show");
 }

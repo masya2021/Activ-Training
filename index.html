@@ -13,55 +13,40 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Cardo:regular,italic,700" rel="stylesheet" />
-    <script src="./script.js" defer></script>
+    <!-- <script src="./script.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>ActiveBoxTraining</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
                     <img src="./assets/img/ActiveBoxLogo.png" alt="logo">
                 </div>
-                <div class="navigation">
-                    <div class="navigation__block"><a href="#features" class="navigation__link">Features</a></div>
-                    <div class="navigation__block"><a href="#works" class="navigation__link">Works</a></div>
-                    <div class="navigation__block"><a href="#team" class="navigation__link">Our Team</a></div>
-                    <div class="navigation__block"><a href="#clients" class="navigation__link">Testimonials</a></div>
-                    <div class="navigation__block"><a href="#download" class="navigation__link">Download</a></div>
-                    <!-- <a href="#features" class="navigation__link">Features</a>
-                    <a href="#works" class="navigation__link">Works</a>
-                    <a href="#team" class="navigation__link">Our Team</a>
-                    <a href="#clients" class="navigation__link">Testimonials</a>
-                    <a href="#download" class="navigation__link">Download</a> -->
-                </div>
+                <nav class="navigation">
+                    <div class="navigation__block"><a href="#features" data-scroll="#features"
+                            class="navigation__link">Features</a></div>
+                    <div class="navigation__block"><a href="#works" data-scroll="#works"
+                            class="navigation__link">Works</a></div>
+                    <div class="navigation__block"><a href="#team" data-scroll="#team" class="navigation__link">Our
+                            Team</a></div>
+                    <div class="navigation__block"><a href="#clients" data-scroll="#clients"
+                            class="navigation__link">Testimonials</a></div>
+                    <div class="navigation__block"><a href="#download" data-scroll="#download"
+                            class="navigation__link">Download</a></div>
+                </nav>
 
                 <button class="burger__navigation" id="burger__navigation" type="button">
                     <span class="burger__item" id="burger__item">Menu</span>
                 </button>
 
-
-                <!-- <div class="burger__navigation" id="burger__navigation">
-                    <ul class="burger__nav" id="burger__nav">
-                        <li> <a href="#" class="navigation__link">Features</a></li>
-                        <li> <a href="#" class="navigation__link">Features</a></li>
-                        <li> <a href="#" class="navigation__link">Features</a></li>
-                        <li> <a href="#" class="navigation__link">Features</a></li>
-                        <a href="#" class="navigation__link">Features</a>
-                        <a href="#" class="navigation__link">Works</a>
-                        <a href="#" class="navigation__link">Our Team</a>
-                        <a href="#" class="navigation__link">Testimonials</a>
-                        <a href="#" class="navigation__link">Download</a>
-                    </ul>
-                </div> -->
-
-
             </div>
         </div>
     </header>
 
-    <div class="masthead">
+    <div class="masthead" id="masthead">
         <div class="container">
             <div class="masthead__inner">
                 <h1 class="masthead__title">Your Favorite One Page Multi Purpose Template</h1>
@@ -484,6 +469,10 @@
         </symbol>
 
     </svg> <!-- /.Sprite -->
+
+
+    <!-- JavaScript -->
+    <script src="./app.js"></script>
 </body>
 
 </html>
